@@ -33,13 +33,9 @@ const MovieIndex = () => {
 
   const fetchAndSetMovies = async (type, param, action = fetchMovies) => {
     isLoading(true);
-    try {
-      const { results: payload } = await action(param || type);
-      dispatch({ type, payload });
-      isLoading(false);
-    } catch {
-      alert('something went wrong');
-    }
+    const { results: payload } = await action(param || type);
+    dispatch({ type, payload });
+    isLoading(false);
   };
 
   const handleSubmit = async event => {
