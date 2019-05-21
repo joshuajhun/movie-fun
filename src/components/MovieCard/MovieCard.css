@@ -1,0 +1,34 @@
+.poster {
+  opacity: 0.7;
+}
+
+.text-title {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+picture:hover .text-title {
+  opacity: 0.9;
+}
+
+picture:hover .poster {
+  opacity: 1;
+}
+
+picture {
+  cursor: pointer;
+  position: relative;
+  padding: 0.5em;
+}
+
+.title {
+  background-color: #f1c40f;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 1em;
+}

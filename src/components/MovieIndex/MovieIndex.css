@@ -1,0 +1,30 @@
+button {
+  background: #f1c40f;
+  color: black;
+  border: none;
+  border-radius: 1em;
+  margin: 0.5em;
+  font-size: 1em;
+}
+
+.active {
+  background: #f0e50f;
+  color: white;
+}
+
+button[disabled],
+input[type='submit'][disabled] {
+  color: grey;
+}
+
+input[type='submit'] {
+  background: #0eef78;
+  font-size: 1em;
+  color: black;
+  border: none;
+  margin: 0.5em;
+}
+
+input[type='text'] {
+  font-size: 1em;
+}

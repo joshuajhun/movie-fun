@@ -1,0 +1,9 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  text-align: center;
+  padding: 3em;
+  width: 50%;
+}
